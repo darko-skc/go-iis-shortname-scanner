@@ -10,7 +10,7 @@ Windows mantiene compatibilidad con MS-DOS creando shortnames (por ejemplo, `PRO
 
 **Ejemplo:**
 - Archivo real: `transfer.aspx`
-- Nombre corto: `TRANSF~1.ASP`
+- Shortname: `TRANSF~1.ASP`
 - El escáner descubre: `TRANSF~1.ASP` → revela la existencia de un archivo oculto
 
 Esta vulnerabilidad puede afectar a:
@@ -72,11 +72,11 @@ Uso: iis-scanner [opciones]
 
 Opciones:
   -u string
-        URL objetivo (requerido)
+        Target URL (requerido)
         Ejemplo: http://target.com/
   
   -t int
-        Número de hilos concurrentes (predeterminado: 20)
+        Número de hilos (predeterminado: 20)
         Rango: 1-50
   
   -p string
@@ -97,7 +97,7 @@ Opciones:
         Encabezado User-Agent personalizado
   
   -magic-parts string
-        Partes mágicas separadas por comas para probar
+        Magic parts separadas por comas
         Predeterminado: /~1/.rem,/~1/,/a.aspx,/a.asp,...
   
   -scan-chars string
@@ -163,5 +163,6 @@ Esta herramienta se proporciona solo con fines educativos y de pruebas de seguri
 **Al usar esta herramienta, aceptas que tienes permiso para probar los sistemas objetivo.**
 
 ## Licencia
+
 
 Este proyecto se publica bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
